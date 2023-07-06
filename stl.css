@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+header {
+  background-color: #111;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 40px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  border-bottom: 2px solid rgb(230, 33, 33);
+}
+main {
+  padding: 20px;
+}
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.hero button {
+  padding: 12px 30px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.hero button:hover{
+  cursor: pointer;
+  background-color: rgb(167, 40, 65);
+  box-shadow: 2px 2px 5px #00000056;
+}
+.watch-anywhere {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.watch-anywhere h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.watch-anywhere p{
+  font-size:25px;
+}
+.watch-anywhere .devices {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.watch-anywhere .devices img {
+  margin: 0 10px;
+}
+.watch-anywhere .devices img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.pick-your-price {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.pick-your-price h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.pick-your-price .plans {
+  display: flex;
+  justify-content: center;
+}
+.pick-your-price .plan {
+  padding: 20px;
+  background-color: #222;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+.pick-your-price .plan h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.pick-your-price .plan p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.pick-your-price .plan ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.pick-your-price .plan ul li {
+  margin-bottom: 10px;
+}
+.pick-your-price .plan button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pick-your-price .plan button:hover{
+  background-color: rgb(163, 45, 69);
+  cursor: pointer;
+}
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+.footer,.footer a {
+	color: #999;
+	font-size: 0.9rem;
+}
+.footer p {
+	margin-bottom: 1.5rem;
+}
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+.footer li {
+	line-height: 1.9;
+}
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  nav img {
+    height: 30px;
+  }
+  nav ul li {
+    margin-left: 10px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .watch-anywhere h2 {
+    font-size: 24px;
+  }
+  .pick-your-price h2 {
+    font-size: 24px;
+  }
+  .pick-your-price .plan {
+    padding: 15px;
+    margin: 0 5px;
+  }
+  .pick-your-price .plan h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .pick-your-price .plan p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .pick-your-price .plan ul {
+    margin-bottom: 15px;
+  }
+  .pick-your-price .plan button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .footer .footer-cols {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
